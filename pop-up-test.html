@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+    <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+     <link rel="stylesheet" href="css/main.css">
+     <script type="text/javascript" src="js/bioep.min.js"></script>
+     <script type="text/javascript">
+      bioEp.init({
+        html: '<div id="content">Before you leave us :(<br> Do you you want to keep in touch?<br><input type = "email" id ="email" pattern =".+@globex.com" size="30" required><br><button>Submit</button></div>', 
+        css: '#content {font-family: "Roboto", sans-serif; font-size: 20px; text-align:center;}',
+        cookieExp: 0
+      });
+    </script>
+
+      <style type="text/css">
+
+  *{margin: 0;}
+
+.one {
+  position: relative;
+  display: inline-block;
+  /*padding: 1em 5em 1em 1em;*/
+  overflow: hidden;
+  color: #fff;
+  height:500px;
+  width:100%;
+
+}
+
+.one:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: lightblue;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: top right;
+  -webkit-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  transform: skewY(3deg);
+  z-index: -1;
+  background: url("images/visualization-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.two{
+
+  position: relative;
+  display: inline-block;
+  /*padding: 1em 5em 1em 1em;*/
+  overflow: hidden;
+ /* color: #fff;*/
+  height:700px;
+  width:100%;
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  .two{
+    height: auto;
+
+    }
+  }
+
+.two:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: lightblue;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: top right;
+  -webkit-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  transform: skewY(3deg);
+  z-index: -1;
+  background:#DEEFF5;
+  /*background-repeat: no-repeat;
+  background-size: 100%*/;
+}
+.two .content{
+  /*padding-bottom: 5%;*/
+}
+
+.two .text h1{
+  color:black;
+  /*margin-left:-5%;*/
+}
+.two .text h3{
+ opacity: 0.8;
+  /*margin-left:-5%;*/
+}
+.two .text h3:hover{
+  opacity:1.0;
+}
+
+
+.text{
+  margin:0 15% 0 15%;
+  /*padding:10%;*/
+  padding:2%;
+}
+
+.text h2{
+  color:#00AAB9;;
+
+}
+.text p{
+  font-size:1.4em;
+  padding:2% 0 0 0;
+
+}
+
+
+@media only screen and (max-width: 992px) {
+    .text {
+      margin:1%;
+    }
+    .text p{
+      font-size:1.0em;
+    }
+  }
+
+  .three{
+  position: relative;
+  display: inline-block;
+  /*padding: 1em 5em 1em 1em;*/
+  overflow: hidden;
+  color: #fff;
+  height:350px;
+  width:100%;
+
+}
+.three:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+/*  background: lightblue;*/
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: top right;
+  -webkit-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  transform: skewY(3deg);
+  z-index: -1;
+  background:#DEEFF5;
+  /*background-repeat: no-repeat;
+  background-size: 100%*/;
+}
+
+.three .text h1{
+  color:black;
+}
+
+.three .text span{
+  color:#00AAB9;
+}
+
+.four .text h1{
+  color:#00AAB9;
+}
+.four .text h3{
+  color:black;
+  opacity:0.5;
+}
+
+.four .text h3:hover{
+  opacity:1.0;
+}
+
+i {
+  border: solid #00AAB9;
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/*.right:hover{
+  transform:rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transition: 0.5s;
+
+}*/
+
+h3:hover > .right{transform:rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transition: all 0.5s ease-out;
+}
+
+/*#container:hover > #cube { background-color: yellow; }*/
+
+
+
+/*  for the sliding*/
+  
+    .tabs{
+      text-align: center;
+      cursor: pointer;
+      margin-bottom: 5%;
+      width: 100%;
+
+    }
+    .tabs span{
+      /*padding:10px;*/
+      font-size:30px;
+      border:2px solid #00AAB9;
+    /*  width:10%;
+*/      margin-bottom: 20%;
+      background:#00AAB9;
+      opacity:1.0;
+      padding:1%;
+      color:white;
+
+    }
+    @media only screen and (max-width: 600px) {
+        .tabs span{
+        display: block;
+        margin-bottom: 5px;
+          }
+      }
+
+    .tabs span:hover{
+      opacity:0.7;
+    }
+
+
+
+    .content1{
+      text-align: left;
+      line-height: 2px;
+      margin:0 10%;
+    }
+
+    #tabs-wrapper{
+    /*  background:#00AAB9;*/
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation" s>
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand" >Wiley Digital Archives <span></span></a>
+                    <a href="index.html" class="navbar-brand-short" >WDA <span></span></a>
+               </div>
+
+
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="#about" class="smoothScroll" style = "color:#5b5b5b">Product</a></li>
+                         <!--  trying to make dropdown navigation bar, didn't work | update: worked perfectly! -->
+                         <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="#"style = "color:#5b5b5b">Collection <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                   <li><a href="#">The New York Academy of Sciences</a></li>
+                                   <li><a href="rcp1.html">Royal College of Physicians of London</a></li>
+                                   <li><a href="#">Royal Anthropological Institute <br> of Great Britain and Ireland</a></li>
+                                   <li><a href="#">Royal Geographical Society</a></li>
+                                    <li><a href="#">Become a partner</a></li>
+                              </ul>
+                         </li>
+                         <li><a href="#menu" class="smoothScroll" style = "color:#5b5b5b">Support</a></li>
+                         <li><a href="contact.html" class="smoothScroll" style = "color:#5b5b5b">Contact</a></li>
+                          <li><a href="slanted-solved.html" class="smoothScroll" style = "color:#5b5b5b">About Us </a></li>
+                    </ul>
+
+
+                    <ul class="nav navbar-nav navbar-right">
+                         <!-- <li><a href="#"> Get Connected! <i class="fa fa-phone"></i> 010 020 0340</a></li> -->
+                         <a href="https://app.wileydigitalarchives.com/wiley/auth/pass;getIp=true" class="section-btn">Sign In</a>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+     <section id="angled" data-stellar-background-ratio="0.5">
+          <!-- <div class="overlay"></div> -->
+          <!-- <div class="container-fluid"> -->
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class ='one'></div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class = 'text'>
+                          <div class ='content'>
+                            <h2> The MARC data elements make up the foundation of most library online public access catalogs used today! </h2>
+                             <p>MARC is the acronym for <strong>MA</strong>chine-<strong>R</strong>eadable <strong>C</strong>ataloging. It defines a data format by which computers exchange, use, and interpret bibliographic information. The MARC data elements make up the foundation of most library online public access catalogs used today. These can simply be defined as electronic versions of "cards" in library card catalogs.  They are a focal point of monograph discovery and are critical for libraries, who want to help multiple entry points to online book content.<br><br>
+                             Institutions that have access to Wiley Digital Archives collections are entitled to receive free MARC records. These full-level bibliographic records include key metadata elements that drive discovery, such as: table of contents, summaries, Library of Congress subject headings, call numbers, persistent links and more.  Records may be downloaded through the administrator dashboard on the platform.
+                            </p><br>
+                             <a href="#about" class="section-btn-next smoothScroll">Learn More</a><br><br>
+                          </div> 
+                        </div>
+                    </div>
+                  </div>
+                <!-- </div> -->
+              </section>
+              <div class="row">
+
+
+          <div class="col-md-12 col-sm-6">
+                      <div class ='two'>
+                        <div class = 'text'>
+
+<div id = "tabs-wrapper"> 
+
+  <div class = "tabs">
+    
+    <span onclick="currentSlide(1)" >Discoverability</span>
+    <span onclick="currentSlide(2)" >Trainning</span>
+    <span onclick="currentSlide(3)" >Usage Statistics</span>
+
+    <!-- doing it as hover over; works but not perfect -->
+
+    <!-- <span onmouseover="currentSlide(1)" onmouseout="currentSlide(2)" >Integration</span>
+    <span onmouseover="currentSlide(2)" onmouseout="currentSlide(1)">Hubs</span> -->
+  </div>
+
+  <div class = "content1">
+     <p> Discovery and access are critical to driving usage to licensed content. Following discovery-related industry standards and collaborating with library solutions partners are instrumental parts of improving discovery. Wiley maintains its commitment to the seamless integration of published content into local systems, in order to promote library sanctioned discovery. </p>
+     <p> <strong>Discovery Services</strong> Webscale discovery services (or discovery layers) are tools that search across institutional collections and provide relevance-ranked results. They are used in libraries around the world to help augment licensed content discovery and provide multiple entrance points to users.  To create a less complicated experience for library workflows and user searches, Wiley has partnered with various discovery vendors for the benefit of our mutual customers.The Wiley Digital Archives collections will be represented in the current products: <em style ="color:#00AAB9" >EBSCO Discovery Services (EDS), ProQuest Summon, Ex Libris Primo, OCLC WorldCat Discovery,Yewno.</em></p>
+  </div>
+  <div class = "content1">
+    <p> Wiley is proud to be able to offer intuitive guides and a devoted training team to support your institution in any way you may need for your Wiley Digital Archives acquisition. From facilitating a smooth implementation, to guiding users on how to effectively perform research from within, the Wiley team will be available to offer any assistance you may require. <br><br>Our team can provide variety of help including bespoke training materials, webinars and on-site visits to train your team. We will also provide developmental support needed to utilize and benefit from the program.Schedule a training session for your institution: (need link). <br><br> Please explore these training materials to get started: <em style ="color:#00AAB9">Wiley Digital Archives Platform Highlights Video,Frequently Asked Questions, Administrative Guide, Quick User Guide,Accessibility Guide </em></p>
+  </div>
+
+  <div class = "content1">
+    <p> The Wiley Digital Archives portal enables COUNTER- and SUSHI-compliant usage statistics, local branding for your library, and insights into how these collections are being accessed and used.Usage statistics and reports are available for download exclusively on the Wiley Digital Archives Administrative Portal. Once logged in, administrators can choose which type of usage report to access (admin.wileydigitalarchives.com), and can customize reports by date range.<br><br><strong>Custom Usage Reports straight from the platform</strong> Wiley provides detailed usage statistics on both trial and purchased collections, measuring the number of sessions, searches, downloads, and translations across each collection and at the platform level (cross-search).<br><br><strong>COUNTER reports</strong>Wiley Digital Archives  COUNTER 5-compliant and all customers are entitled to access their own COUNTER 5-formatted usage reports via our Admin Portal.<br><br><strong>SUSHI</strong> Wiley Digital Archive collections are compliant with the SUSHI (Standardized Usage Harvesting Initiative) protocol for automated harvesting and consolidation of usage from different vendors. <a href="https://admin.wileydigitalarchives.com/login" class="section-btn-next smoothScroll" style="position: relative;top:20px;">Go to Admin Portal</a></p>
+
+      
+  </div>
+    
+  </div>
+</div>
+</div>
+</div>
+
+</div>  
+
+     <section id="about" data-stellar-background-ratio="0.5" style = "padding-bottom:2%;">
+        <div class="container" >
+                   <div class="row">
+
+            <div class="col-md-6 col-sm-12">
+                         <div class="about-info" >
+                              <div class="section-title " data-wow-delay="">
+                                  <!--  <h4>Read our story</h4>
+                                   <br><br><h2>Create Engaging <br> Content Hubs </h2> -->
+                              </div>
+
+                              <div class="rcp-details" data-wow-delay="">
+                                   <p style="font-size: 1.4em; text-align: justify;">KBART is an acronym for <strong>K</strong>nowledge<strong>B</strong>ase <strong>A</strong>nd <strong>R</strong>elated <strong>T</strong>ools.  It is a NISO ((National Information Standards Organization) recommended practice that allows for a standardized method of displaying title lists. This was originally developed for link resolver vendors.  The uses for KBART span widely into electronic resource management. Content integration with vendor knowledgebases is critical.  To make workflows easier for customers, Wiley has partnered with library solutions vendors in sharing title lists for its content.
+
+                                  While most libraries prefer working in the vendor knowledgebases and aligning their content, we'd also like to provide you with the files themselves for institutional use. You can access title lists for the Wiley Digital Archives collections KBART files.
+</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                         <div class="about-image" data-wow-delay="">
+                              <img src="images/visualization-inner.jpg" style ="height:400px;position: relative;
+                              bottom:10%; border-left:5px solid #00AAB9" class="img-responsive" alt="">
+                  <!-- i frmae has issues with responsiveness  -->           
+                              <!-- <iframe width="560" height="400" src="https://www.youtube.com/embed/fZxgOddjGlk?showinfo = 0 controls = 0 autohide = 1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                         </div>
+                    </div>
+                   </div>
+                  </div>
+                  </section>  
+
+                  <div class = "module-gradient-callout theme-flat" style="margin-top:5%">  
+               <div class = "container">
+                    <div class = "row">
+                         <div class ="col-12">
+                         <span class ="title"> Access to Wiley Digital Archives platform with one time purchase, unlimited number of users!</span>
+                         </div> 
+                         <a href="contact.html" class="section-btn-next request" >Request a Demo!</a>
+                    </div>
+               </div>
+          </div>
+
+
+
+     <!- - FOOTER - ->
+     <footer id="footer" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-3 col-sm-8">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">Find us</h2>
+                              </div>
+                              <address class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>123 nulla a cursus rhoncus,<br> augue sem viverra 10870<br>id ultricies sapien</p>
+                              </address>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-8">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">Talk to a representative</h2>
+                              </div>
+                              <address class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>090-080-0650 | 090-070-0430</p>
+                                   <p><a href="mailto:info@company.com">info@company.com</a></p>
+                                   <p>LINE: Wiley247 </p>
+                              </address>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-8">
+                         <div class="footer-info footer-open-hour">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">office hours</h2>
+                              </div>
+                              <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>Monday: Closed</p>
+                                   <div>
+                                        <strong>Tuesday to Friday</strong>
+                                        <p>7:00 AM - 9:00 PM</p>
+                                   </div>
+                                   <div>
+                                        <strong>Saturday - Sunday</strong>
+                                        <p>11:00 AM - 10:00 PM</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4">
+                         <ul class="wow fadeInUp social-icon" data-wow-delay="0.4s">
+                              <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                              <li><a href="#" class="fa fa-twitter"></a></li>
+                              <li><a href="#" class="fa fa-instagram"></a></li>
+                              <li><a href="#" class="fa fa-google"></a></li>
+                         </ul>
+
+                         <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s"> 
+                              <p><br>Copyright &copy; 2018 <br>John Wiley & Son's
+                              
+                              <br><br>Design: <a rel="nofollow" href="http://shoaibahamed.com" target="_parent">Demand Gen web team</a></p>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+
+
+  <script>
+var slideIndex = 1;
+// showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("content1");
+  var dots = document.getElementsByClassName("tabs");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+showSlides(slideIndex);
+</script>
+
+
+       <!- - SCRIPTS - ->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/jquery.magnific-popup.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>

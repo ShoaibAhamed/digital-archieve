@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	
+		.tabs{
+			text-align: center;
+			cursor: pointer;
+
+		}
+		.tabs span{
+			/*padding:10px;*/
+			font-size:20px;
+			border:2px solid #00AAB9;
+			width:100px;
+			margin-bottom: 10%;
+			background:#00AAB9;
+			opacity:0.5;
+
+		}
+
+		.tabs span:hover{
+			opacity:1.0;
+		}
+
+
+
+		.content{
+			text-align: center;
+		}
+
+		#tabs-wrapper{
+		/*	background:#00AAB9;*/
+		}
+
+		
+	</style>
+</head>
+<body>
+
+<div id = "tabs-wrapper">	
+
+	<div class = "tabs">
+		<span onclick="currentSlide(1)" style = "margin:10px;" >Integration</span>
+		<span onclick="currentSlide(2)" >Hubs</span>
+
+		<!-- doing it as hover over; works but not perfect -->
+
+		<!-- <span onmouseover="currentSlide(1)" onmouseout="currentSlide(2)" >Integration</span>
+		<span onmouseover="currentSlide(2)" onmouseout="currentSlide(1)">Hubs</span> -->
+	</div>
+
+	<div class = "content">
+		 <p>This is some text, no images</p>
+    	 <img src="images/background-image-final-2.jpg" alt="Smiley face" height="315" width="560">	
+	</div>
+	<div class = "content">
+		<p>some other text</p>
+    	<iframe width="560" height="315" src="https://www.youtube.com/embed/t4H_Zoh7G5A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+		
+	</div>
+
+<!-- </div> -->	
+
+	<script>
+var slideIndex = 1;
+// showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("content");
+  var dots = document.getElementsByClassName("tabs");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+showSlides(slideIndex);
+</script>
+
+</body>
+</html>
