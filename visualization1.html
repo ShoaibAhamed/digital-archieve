@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	  <meta charset="UTF-8">
+  <title></title>
+    <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
      <meta name="description" content="">
      <meta name="keywords" content="">
@@ -16,9 +16,9 @@
      <link rel="stylesheet" href="css/owl.theme.default.min.css">
      <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/main.css">
-	<style type="text/css">
+  <style type="text/css">
 
-	*{margin: 0;}
+  *{margin: 0;}
 
 .one {
   position: relative;
@@ -57,7 +57,7 @@
   /*padding: 1em 5em 1em 1em;*/
   overflow: hidden;
  /* color: #fff;*/
-  height:450px;
+  height:400px;
   width:100%;
 
 }
@@ -170,17 +170,7 @@
   color:#00AAB9;
 }
 
-.four .text h1{
-  color:#00AAB9;
-}
-.four .text h3{
-  color:black;
-  opacity:0.5;
-}
 
-.four .text h3:hover{
-  opacity:1.0;
-}
 
 i {
   border: solid #00AAB9;
@@ -210,56 +200,91 @@ h3:hover > .right{transform:rotate(-135deg);
 
 
 
-/*	for the sliding*/
-	
-		.tabs{
-			text-align: center;
-			cursor: pointer;
-			margin-bottom: 5%;
-			width: 100%;
+/*  for the sliding*/
+  
+    .tabs{
+      text-align: center;
+      cursor: pointer;
+      margin-bottom: 5%;
+      width: 100%;
+      margin:0;
 
-		}
-		.tabs span{
-			/*padding:10px;*/
-			font-size:30px;
-			border:2px solid #00AAB9;
-		/*	width:10%;
-*/			margin-bottom: 20%;
-			background:#00AAB9;
-			opacity:1.0;
-			padding:1%;
-			color:white;
+    }
+    .tabs span{
+      /*padding:10px;*/
+      font-size:30px;
+      border:1px solid #a9e1e8;
+    /*  width:10%;
+*/      margin-bottom: 3%;
+      background:#00AAB9;
+      opacity:1.0;
+      padding:1%;
+      color:white;
+       margin-left:-0.5%;
+       width:300px;
+       display: inline-block;
+       transition: 0.3s ease-out;
 
-		}
-		@media only screen and (max-width: 600px) {
-  			.tabs span{
-    		display: block;
-    		margin-bottom: 5px;
-  				}
-			}
+    }
+    /* #tabs-two{
+      background:#e5f6f8;
+      color:black;
+    }
+    #tabs-three{
+      background:#e5f6f8;
+      color:black;
+    }*/
 
-		.tabs span:hover{
-			opacity:0.7;
-		}
+    .tabs span:nth-child(2){
+      background:#e5f6f8;
+      color:black;
+
+    }
+     .tabs span:nth-child(3){
+      background:#e5f6f8;
+      color:black;
+
+    }
+
+    .tabs span:hover{
+      background:#19b2c0;
+      color:white;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .tabs span{
+        display: block;
+        margin-bottom: 5px;
+        text-align: center;
+        width:100%;
+        margin-left:0%;
+          }
+      }
+
+   
 
 
+    .content1{
+      text-align: left;
+      margin:0 10%;
+   /*   line-height: 4.5;*/ /*did not work */
+      display: inline-block;
 
-		.content1{
-			text-align: left;
-			line-height: 2px;
-			margin:0 10%;
-		}
+    }
+    .content1 p{
+      transition: 0.3s linear;
+    }
 
-		#tabs-wrapper{
-		/*	background:#00AAB9;*/
-		}
+    #tabs-wrapper{
+    /*  background:#00AAB9;*/
+    }
 
-		
-	</style>
+    
+  </style>
 </head>
 <body>
 
-	<!-- MENU -->
+  <!-- MENU -->
      <section class="navbar custom-navbar navbar-fixed-top" role="navigation" s>
           <div class="container">
 
@@ -332,47 +357,95 @@ h3:hover > .right{transform:rotate(-135deg);
               <div class="row">
 
 
-					<div class="col-md-12 col-sm-6">
+          <div class="col-md-12 col-sm-6">
                       <div class ='two'>
                         <div class = 'text'>
 
-<div id = "tabs-wrapper">	
+<div id = "tabs-wrapper"> 
 
-	<div class = "tabs">
-		
-		<span onclick="currentSlide(1)" >Publication Brower</span>
-		<span onclick="currentSlide(2)" >Analysis Hub</span>
-		<span onclick="currentSlide(3)" >Explorer tool</span>
+  <div class = "tabs">
+    
+    <span id = "tabs-one" onclick="change1();currentSlide(1);">Publication Browser</span>
+     <span id = "tabs-two" onclick="change2();currentSlide(2);">Analysis Hub</span>
+    <!-- <span id = "tabs-two" onclick= "currentSlide(2);change1()" >Analysis Hub</span> -->
+    <span id = "tabs-three" onclick= "change3();currentSlide(3);" >Explorer tool</span>
 
-		<!-- doing it as hover over; works but not perfect -->
+    <!-- doing it as hover over; works but not perfect -->
 
-		<!-- <span onmouseover="currentSlide(1)" onmouseout="currentSlide(2)" >Integration</span>
-		<span onmouseover="currentSlide(2)" onmouseout="currentSlide(1)">Hubs</span> -->
-	</div>
+    <!-- <span onmouseover="currentSlide(1)" onmouseout="currentSlide(2)" >Integration</span>
+    <span onmouseover="currentSlide(2)" onmouseout="currentSlide(1)">Hubs</span> -->
+  </div>
 
-	<div class = "content1">
-		 <p> The <strong>Place of Publication Browser</strong> calls attention to where content was published, when, by whom, and on which subjects. Users can to see who was talking about what, where, when, and in which publication mediums, by selecting an area on the map or by executing a search. This assists users in tracing the evolution of ideas over time and geographies, and adds a visual element to a simple “place of publication” search, adding geographical and historical perspective to the content </p>
-	</div>
-	<div class = "content1">
-		<p> The <strong>Analysis Hub</strong> offers statistical analysis tools for <strong> Term Frequency</strong> and<strong>Term Popularity</strong>, which enable users to place their search terms in various contexts over time, and while <strong>Term Groups </strong>identifies relationships between search terms and the most meaningful subjects, people, locations and events related to those search terms through textual analyses.  </p>
+  <script>
+    function change1(){
+    document.getElementById('tabs-one').style.background = "#00AAB9";
+    document.getElementById('tabs-one').style.color = "white";
+    document.getElementById('tabs-two').style.background = "#e5f6f8";
+    document.getElementById('tabs-two').style.color = "black";
+    document.getElementById('tabs-three').style.background = "#e5f6f8";
+    document.getElementById('tabs-three').style.color = "black";
+  
+  }
+      function change2(){
+    document.getElementById('tabs-two').style.background = "#00AAB9";
+    document.getElementById('tabs-two').style.color = "white";
+    document.getElementById('tabs-one').style.background = "#e5f6f8";
+    document.getElementById('tabs-one').style.color = "black";
+    document.getElementById('tabs-three').style.background = "#e5f6f8";
+    document.getElementById('tabs-three').style.color = "black";
+  
+  }
+
+  function change3(){
+    document.getElementById('tabs-three').style.background = "#00AAB9";
+    document.getElementById('tabs-three').style.color = "white";
+    document.getElementById('tabs-two').style.background = "#e5f6f8";
+    document.getElementById('tabs-two').style.color = "black";
+    document.getElementById('tabs-one').style.background = "#e5f6f8";
+    document.getElementById('tabs-one').style.color = "black";
+
+  
+  }
+
+  function hover(){
+    document.getElementById('tabs-two').style.background = "#00AAB9";
+      document.getElementById('tabs-two').style.color = "#ffffff";
+    
+  }
+
+  function unhover(){
+     document.getElementById('tabs-two').style.background = "#e5f6f8";
+      document.getElementById('tabs-two').style.color = "#000000";
+  }
+   
+   
+    </script>
+
+  
+
+  <div class = "content1">
+     <p> The <strong>Place of Publication Browser</strong> calls attention to where content was published, when, by whom, and on which subjects. Users can to see who was talking about what, where, when, and in which publication mediums, by selecting an area on the map or by executing a search. This assists users in tracing the evolution of ideas over time and geographies, and adds a visual element to a simple “place of publication” search, adding geographical and historical perspective to the content </p>
+  </div>
+  <div class = "content1">
+    <p> The <strong>Analysis Hub</strong> offers statistical analysis tools for <strong> Term Frequency</strong> and<strong>Term Popularity</strong>, which enable users to place their search terms in various contexts over time, and while <strong>Term Groups </strong>identifies relationships between search terms and the most meaningful subjects, people, locations and events related to those search terms through textual analyses.  </p>
   </div>
 
   <div class = "content1">
-		<p> The <strong>Explorer Tools</strong> offer a more visual engagement with the rich collections of photos and maps in the archives. Browse all of the photographs in an archive or collection in a gallery display using the <strong>Photos</strong> tool, or narrow the images down via a simple search term, or through the advanced search fields and delimiters. The Maps tool also enables users to view <strong>maps </strong> over time and locations simply by selecting an area of the world. Once a selection is made, all of the maps which correspond to that location (through geocoordinate tagging) will appear in the viewing pane, and users can then click into any map for a more detailed view.  </p>
+    <p> The <strong>Explorer Tools</strong> offer a more visual engagement with the rich collections of photos and maps in the archives. Browse all of the photographs in an archive or collection in a gallery display using the <strong>Photos</strong> tool, or narrow the images down via a simple search term, or through the advanced search fields and delimiters. The Maps tool also enables users to view <strong>maps </strong> over time and locations simply by selecting an area of the world. Once a selection is made, all of the maps which correspond to that location (through geocoordinate tagging) will appear in the viewing pane, and users can then click into any map for a more detailed view.  </p>
   </div>
-		
-	</div>
+    
+  </div>
 </div>
 </div>
 </div>
 
-</div>	
+</div>  
 
-		 <section id="about" data-stellar-background-ratio="0.5" style = "padding-bottom:10%;">
-				<div class="container" >
-              		 <div class="row">
+     <section id="about" data-stellar-background-ratio="0.5" style = "padding-bottom:10%;">
+        <div class="container" >
+                   <div class="row">
 
-						<div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12">
                          <div class="about-info" >
                               <div class="section-title " data-wow-delay="">
                                   <!--  <h4>Read our story</h4>
@@ -393,15 +466,16 @@ h3:hover > .right{transform:rotate(-135deg);
                          </div>
                     </div>
                    </div>
-                  </div>  
+                  </div>
+                  </section>  
 
-                  <div class = "module-gradient-callout theme-flat" style="margin-top:10%">  
+                  <div class = "module-gradient-callout theme-flat" style="margin-top:5%">  
                <div class = "container">
                     <div class = "row">
                          <div class ="col-12">
-                         <span class ="title"> Access to Royal College of Physicians Archive within WDA platform one time purchase, unlimited number of users!</span>
+                         <span class ="title"> Access to Wiley Digital Archives platform with one time purchase, unlimited number of users!</span>
                          </div> 
-                         <a href="contact.html" class="section-btn-next request" >Request a Personalized Quote</a>
+                         <a href="contact.html" class="section-btn-next request" >Request a Demo!</a>
                     </div>
                </div>
           </div>
@@ -477,7 +551,7 @@ h3:hover > .right{transform:rotate(-135deg);
 
 
 
-	<script>
+  <script>
 var slideIndex = 1;
 // showSlides(slideIndex);
 
@@ -507,6 +581,8 @@ function showSlides(n) {
 
 showSlides(slideIndex);
 </script>
+
+
 
 
        <!- - SCRIPTS - ->

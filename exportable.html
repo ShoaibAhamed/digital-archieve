@@ -1,0 +1,633 @@
+<!-- Digital preservation + Exporable page together -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+    <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/main.css">
+  <style type="text/css">
+
+  *{margin: 0;}
+
+.one {
+  position: relative;
+  display: inline-block;
+  /*padding: 1em 5em 1em 1em;*/
+  overflow: hidden;
+  color: #fff;
+  height:500px;
+  width:100%;
+
+}
+
+.one:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: lightblue;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: top right;
+  -webkit-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  transform: skewY(3deg);
+  z-index: -1;
+  background: url("images/exportable-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.two{
+
+  position: relative;
+  display: inline-block;
+  /*padding: 1em 5em 1em 1em;*/
+  overflow: hidden;
+ /* color: #fff;*/
+  height:500px;
+  width:100%;
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  .two{
+    height: auto;
+
+    }
+  }
+
+.two:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: lightblue;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: top right;
+  -webkit-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  transform: skewY(3deg);
+  z-index: -1;
+  background:#DEEFF5;
+  /*background-repeat: no-repeat;
+  background-size: 100%*/;
+}
+.two .content{
+  /*padding-bottom: 5%;*/
+}
+
+.two .text h1{
+  color:black;
+  /*margin-left:-5%;*/
+}
+.two .text h3{
+ opacity: 0.8;
+  /*margin-left:-5%;*/
+}
+.two .text h3:hover{
+  opacity:1.0;
+}
+
+
+.text{
+  margin:0 15% 0 15%;
+  /*padding:10%;*/
+  padding:2%;
+}
+
+.text h2{
+  color:#00AAB9;;
+
+}
+.text p{
+  font-size:1.4em;
+  padding:2% 0 0 0;
+
+}
+
+
+@media only screen and (max-width: 992px) {
+    .text {
+      margin:1%;
+    }
+    .text p{
+      font-size:1.0em;
+    }
+  }
+
+  .three{
+  position: relative;
+  display: inline-block;
+  /*padding: 1em 5em 1em 1em;*/
+  overflow: hidden;
+  color: #fff;
+  height:350px;
+  width:100%;
+
+}
+.three:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+/*  background: lightblue;*/
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: top right;
+  -webkit-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  transform: skewY(3deg);
+  z-index: -1;
+  background:#DEEFF5;
+  /*background-repeat: no-repeat;
+  background-size: 100%*/;
+}
+
+.three .text h1{
+  color:black;
+}
+
+.three .text span{
+  color:#00AAB9;
+}
+
+
+
+i {
+  border: solid #00AAB9;
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/*.right:hover{
+  transform:rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transition: 0.5s;
+
+}*/
+
+h3:hover > .right{transform:rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transition: all 0.5s ease-out;
+}
+
+/*#container:hover > #cube { background-color: yellow; }*/
+
+
+
+/*  for the sliding*/
+  
+    .tabs{
+      text-align: center;
+      cursor: pointer;
+      margin-bottom: 5%;
+      width: 100%;
+      margin:0;
+
+    }
+    .tabs span{
+      /*padding:10px;*/
+      font-size:1.4em;
+      border:1px solid #a9e1e8;
+    /*  width:10%;
+*/      margin-bottom: 3%;
+      background:#00AAB9;
+      opacity:1.0;
+      padding:2% 3%;
+      color:white;
+       margin-left:-0.5%;
+       width:300px;
+       display: inline-block;
+       transition: 0.3s ease-out;
+
+    }
+    /* #tabs-two{
+      background:#e5f6f8;
+      color:black;
+    }
+    #tabs-three{
+      background:#e5f6f8;
+      color:black;
+    }*/
+
+    .tabs span:nth-child(2){
+      background:#e5f6f8;
+      color:black;
+
+    }
+     .tabs span:nth-child(3){
+      background:#e5f6f8;
+      color:black;
+
+    }
+
+    .tabs span:hover{
+      background:#19b2c0;
+      color:white;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .tabs span{
+        display: block;
+        margin-bottom: 5px;
+        text-align: center;
+        width:100%;
+        margin-left:0%;
+          }
+      }
+
+   
+
+
+    .content1{
+      text-align: left;
+      margin:0 10%;
+   /*   line-height: 4.5;*/ /*did not work */
+      display: inline-block;
+
+    }
+    .content1 p{
+      transition: 0.3s linear;
+    }
+
+    #tabs-wrapper{
+    /*  background:#00AAB9;*/
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand" >Wiley Digital Archives <span></span></a>
+                    <a href="index.html" class="navbar-brand-short" >WDA <span></span></a>
+               </div>
+
+
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="product.html" class="smoothScroll" style = "color:#5b5b5b">Product</a></li>
+
+                        <!--  for product -->
+                        <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="#" style = "color:#5b5b5b">Benefits <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                   <li><a href="rare-content.html">Unique and rare primary souce content</a></li>
+                                   <li><a href="visualization.html">Visualization, exploration and analysis</a></li>
+                                   <li><a href="translate.html">Translate interface</a></li>
+                                   <li><a href="one-time-payment.html">One time payment</a></li>
+                                    <li><a href="exportable.html">Exportable, downloadable and sharable</a></li>
+                                    <li><a href="preservation.html">Preserving the past</a></li>
+                                    <li><a href="under-cosnt.html">Geotagged historical maps</a></li>
+                                    <li><a href="under-cosnt.html">Text and data mining</a></li>
+                                    <li><a href="contact.html">Free Trial</a></li>
+                              </ul>
+                         </li>
+                         
+                         <!--  trying to make dropdown navigation bar, didn't work | update: worked perfectly! -->
+                         <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="#" style = "color:#5b5b5b">Collection <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                   <li><a href="NYAS.html">The New York Academy of Sciences</a></li>
+                                   <li><a href="rcp1.html">Royal College of Physicians of London</a></li>
+                                   <li><a href="rgs.html">Royal Geographical Society</a></li>
+                                   <li><a href="rai.html">Royal Anthropological Institute <br> of Great Britain and Ireland</a></li>
+                                    <li><a href="partner.html">Become a partner</a></li>
+                              </ul>
+                         </li>
+                         <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="#" style = "color:#5b5b5b">Support<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                   <li><a href="dmtu.html">Discoveribility, Training, Marc, Usage Statistics</a></li>
+                                   <li><a href="support.html">Marketing Support Materials</a></li>
+                              </ul>
+                         </li>
+                         <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="#"style = "color:#5b5b5b">About<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                   <li><a href="faq.html">FAQ</a></li>
+                                   <li><a href="about.html">About us</a></li>
+                              </ul>
+                         </li>
+                         <li><a href="contact.html" class="smoothScroll"style = "color:#5b5b5b">Contact</a></li>
+                          
+                    </ul>
+
+
+                    <ul class="nav navbar-nav navbar-right">
+                         <!-- <li><a href="#"> Get Connected! <i class="fa fa-phone"></i> 010 020 0340</a></li> -->
+                         <a href="https://app.wileydigitalarchives.com/wiley/auth/pass;getIp=true" class="section-btn" >Sign In</a>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+     <section id="angled" data-stellar-background-ratio="0.5">
+          <!-- <div class="overlay"></div> -->
+          <!-- <div class="container-fluid"> -->
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class ='one'></div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class = 'text'>
+                          <div class ='content'>
+                            <h2>Making archives available for digital preservation it is first a long process of restoration, in order to make sure all content can be scanned.</h2>
+                             <p>TWe partner with well-known societies that have valuable physical archives containing various materials that are digitally untapped, such as meeting notes, original manuscript, field journals and more. Our team of trained conservators, catalogers, and scanning experts are sent to the physical archive to take inventory and review the documents for digitization. We have currently digitized the archives of the New York Academy of Sciences, Royal Anthropological Institute, and the Royal College of Physicians. We are currently in the process of digitizing the Royal Geographical Society with IBG. This archive should be digitized by Summer 2019.<br> <br>These professionals are equipped with state-of-the-art tools to repair, restore, and preserve all types documents. A careful restoration process is integral to enable the preservation of each material. This includes repairing damaged documents (see the pictures on the side) and stabilizing the content to safeguard against the wear of time. IDI project managers and scan operators working on this project have all had extensive training in handling fragile material and rare content. 
+
+</p><br>
+                             <a href="#about" class="section-btn-next smoothScroll">Learn More</a><br><br>
+                          </div> 
+                        </div>
+                    </div>
+                  </div>
+                <!-- </div> -->
+              </section>
+              <div class="row">
+
+
+          <div class="col-md-12 col-sm-12">
+                      <div class ='two'>
+                        <div class = 'text'>
+
+<div id = "tabs-wrapper"> 
+
+  <div class = "tabs">
+    
+    <span id = "tabs-one" onclick="change1();currentSlide(1);">Exportable Data</span>
+     <span id = "tabs-two" onmouseout="unhoverTwo()" onclick="change2();currentSlide(2);" >Downloadable Content</span>
+    <!-- <span id = "tabs-two" onclick= "currentSlide(2);change1()" >Analysis Hub</span> -->
+    <span id = "tabs-three" onclick= "change3();currentSlide(3);" >Shareble Content</span>
+
+    <!-- doing it as hover over; works but not perfect -->
+
+    <!-- <span onmouseover="currentSlide(1)" onmouseout="currentSlide(2)" >Integration</span>
+    <span onmouseover="currentSlide(2)" onmouseout="currentSlide(1)">Hubs</span> -->
+  </div>
+
+  <script>
+    function change1(){
+    document.getElementById('tabs-one').style.background = "#00AAB9";
+    document.getElementById('tabs-one').style.color = "white";
+    document.getElementById('tabs-two').style.background = "#e5f6f8";
+    document.getElementById('tabs-two').style.color = "black";
+    document.getElementById('tabs-three').style.background = "#e5f6f8";
+    document.getElementById('tabs-three').style.color = "black";
+  
+  }
+      function change2(){
+    document.getElementById('tabs-two').style.background = "#00AAB9";
+    document.getElementById('tabs-two').style.color = "white";
+    document.getElementById('tabs-one').style.background = "#e5f6f8";
+    document.getElementById('tabs-one').style.color = "black";
+    // document.getElementById('tabs-one').style.:hover.color = red;
+    document.getElementById('tabs-three').style.background = "#e5f6f8";
+    document.getElementById('tabs-three').style.color = "black";
+    
+  
+  }
+
+  function change3(){
+    document.getElementById('tabs-three').style.background = "#00AAB9";
+    document.getElementById('tabs-three').style.color = "white";
+    document.getElementById('tabs-two').style.background = "#e5f6f8";
+    document.getElementById('tabs-two').style.color = "black";
+    document.getElementById('tabs-one').style.background = "#e5f6f8";
+    document.getElementById('tabs-one').style.color = "black";
+
+  
+  }
+
+  // function hoverTwo(){
+  //   document.getElementById('tabs-two').style.background = "#00AAB9";
+  //     document.getElementById('tabs-two').style.color = "#ffffff";
+    
+  // }
+
+  // function unhoverTwo(){
+  //    document.getElementById('tabs-two').style.background = "#e5f6f8";
+  //     document.getElementById('tabs-two').style.color = "#000000";
+  // }
+   
+   
+    </script>
+
+  <div class = "content1">
+     <p> The Export Data feature enables researchers and students to efficiently access data sets “hidden” inside archival content. Whether data was originally collected in an <strong>original manuscript or printed in a government or society report</strong>, with one click the tabularized data within the Wiley Digital Archives is exportable directly into Excel. <br><br>That data is fielded according to the parameters of the original primary source documents. This enables researchers to <strong>save time, improve research efficiency, and extend longitudinal</strong> data studies beyond datasets created in digital formats and into the world of archival content, unlocking the data and statistics buried in the archives and freeing that data from analog formats. </p>
+  </div>
+  <div class = "content1">
+    <p> Beyond simply searching and browsing content, each piece of archive material within the Wiley Digital Archives platform is <strong>PDF-downloadable </strong>for external use. Users can download a single page, the entire document, and the Optical Character Recognition (OCR) text interpretation in <strong>any language</strong>, with the assistance of Google Translate.<br><br> As an additional resource, each archive content piece is complemented with exportable citations in MLA, Chicago Manual of Style, APA and various other styles. Users can also download individual citations directly to <em>EndNote, ProCite, Reference Manager and Zotero</em>. This feature allows students and researchers to properly site sources with one-click. </p>
+  </div>
+
+  <div class = "content1">
+    <p> Every piece of archive material within the Wiley Digital Archives platform can be shared with friends or colleagues. With dedicated share links and direct connections to email, users can share content and provide direct access to archive content pieces such as original manuscript, handwritten field notebook etc…in its archival research home. These resources can also be shared across social media outlets such as <em>Facebook, Twitter, LinkedIn, Skype, QZone, WeChat</em>, and many more. <br><br>By allowing users to share content directly from the platform, their friends and colleagues can also analyze the content using all the special tools provided within the platform. Wiley Digital Archives is proud to enable successful collaboration between researchers in the digital age.</p>
+  </div>
+    
+  </div>
+</div>
+</div>
+</div>
+
+</div>  
+
+     <section id="about" data-stellar-background-ratio="0.5" style = "padding-bottom:2%;">
+        <div class="container" >
+                   <div class="row">
+
+            <div class="col-md-6 col-sm-12">
+                         <div class="about-info" >
+                              <div class="section-title " data-wow-delay="">
+                                   
+                                   <h3 style="color:#00AAB9;" >A sub heading will be great here! </h3>
+                              </div>
+
+                              <div class="rcp-details" data-wow-delay="">
+                                   <p style="font-size: 1.4em; text-align: justify;"> Digitization not only mitigates the risk associated with physical examination, but also improves the condition of the original sources. In order to be able to scan every piece of archive, they first had to be optimized, so that it scans in a format that can be read and seen clearly. Much of the content was re-housed in new archival storage boxes and sleeves provided by Wiley. Other conservation activities included: surface cleaning (including mold cleaning), tear repair and fragment re-attachment (if there is text on the fragment), spine consolidation, bolt-slitting, flattening and sleeving fragile items in Mylar (instead of repairing, where appropriate).<br><br>The work of restoration is a crucial part of the digitization process. This ensures the materials remain available, the digital information is of continuing value, while remaining accessible and usable at any time.
+</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                         <div class="about-image" data-wow-delay="">
+                              <img src="images/exportable-inner.jpg" style ="height:400px;position: relative;
+                              bottom:10%; border-left:5px solid #00AAB9" class="img-responsive" alt="">
+                  <!-- i frmae has issues with responsiveness  -->           
+                              <!-- <iframe width="560" height="400" src="https://www.youtube.com/embed/fZxgOddjGlk?showinfo = 0 controls = 0 autohide = 1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                         </div>
+                    </div>
+                   </div>
+                  </div>
+                  </section>  
+
+                  <div class = "module-gradient-callout theme-flat" style="margin-top:5%">  
+               <div class = "container">
+                    <div class = "row">
+                         <div class ="col-12">
+                         <span class ="title"> Access to Wiley Digital Archives platform with one time purchase, unlimited number of users!</span>
+                         </div> 
+                         <a href="contact.html" class="section-btn-next request" >Request a Demo!</a>
+                    </div>
+               </div>
+          </div>
+
+
+
+     <!- - FOOTER - ->
+     <footer id="footer" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-3 col-sm-8">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">Find us</h2>
+                              </div>
+                              <address class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>123 nulla a cursus rhoncus,<br> augue sem viverra 10870<br>id ultricies sapien</p>
+                              </address>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-8">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">Talk to a representative</h2>
+                              </div>
+                              <address class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>090-080-0650 | 090-070-0430</p>
+                                   <p><a href="mailto:info@company.com">info@company.com</a></p>
+                                   <p>LINE: Wiley247 </p>
+                              </address>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-8">
+                         <div class="footer-info footer-open-hour">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">office hours</h2>
+                              </div>
+                              <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>Monday: Closed</p>
+                                   <div>
+                                        <strong>Tuesday to Friday</strong>
+                                        <p>7:00 AM - 9:00 PM</p>
+                                   </div>
+                                   <div>
+                                        <strong>Saturday - Sunday</strong>
+                                        <p>11:00 AM - 10:00 PM</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4">
+                         <ul class="wow fadeInUp social-icon" data-wow-delay="0.4s">
+                              <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                              <li><a href="#" class="fa fa-twitter"></a></li>
+                              <li><a href="#" class="fa fa-instagram"></a></li>
+                              <li><a href="#" class="fa fa-google"></a></li>
+                         </ul>
+
+                         <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s"> 
+                              <p><br>Copyright &copy; 2018 <br>John Wiley & Son's
+                              
+                              <br><br>Design: <a rel="nofollow" href="http://shoaibahamed.com" target="_parent">Demand Gen web team</a></p>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+
+
+  <script>
+var slideIndex = 1;
+// showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("content1");
+  var dots = document.getElementsByClassName("tabs");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+showSlides(slideIndex);
+</script>
+
+
+
+
+       <!- - SCRIPTS - ->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/jquery.magnific-popup.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>

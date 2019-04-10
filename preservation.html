@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  <style>
+*{margin: 0;}
+
+.one {
+  position: relative;
+  display: inline-block;
+  /*padding: 1em 5em 1em 1em;*/
+  overflow: hidden;
+  color: #fff;
+  height:500px;
+  width:100%;
+
+}
+
+.one:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: lightblue;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: top right;
+  -webkit-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  transform: skewY(3deg);
+  z-index: -1;
+  background: url("images/nyas-header-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.two{
+
+  position: relative;
+  display: inline-block;
+  /*padding: 1em 5em 1em 1em;*/
+  overflow: hidden;
+ /* color: #fff;*/
+  height:450px;
+  width:100%;
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  .two{
+    height: auto;
+
+    }
+  }
+
+.two:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: lightblue;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: top right;
+  -webkit-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  transform: skewY(3deg);
+  z-index: -1;
+  background:#DEEFF5;
+  /*background-repeat: no-repeat;
+  background-size: 100%*/;
+}
+.two .content{
+  /*padding-bottom: 5%;*/
+}
+
+.two .text h1{
+  color:black;
+  /*margin-left:-5%;*/
+}
+.two .text h3{
+ opacity: 0.8;
+  /*margin-left:-5%;*/
+}
+.two .text h3:hover{
+  opacity:1.0;
+}
+
+
+.text{
+  margin:0 15% 0 15%;
+  /*padding:10%;*/
+  padding:2%;
+}
+
+.text h1{
+  color:#00AAB9;;
+
+}
+.text p{
+  font-size:1.4em;
+  padding:2% 0 0 0;
+
+}
+
+
+@media only screen and (max-width: 992px) {
+    .text {
+      margin:1%;
+    }
+    .text p{
+      font-size:1.0em;
+    }
+  }
+
+  .three{
+  position: relative;
+  display: inline-block;
+  /*padding: 1em 5em 1em 1em;*/
+  overflow: hidden;
+  color: #fff;
+  height:auto;
+  width:100%;
+  /*overflow: scroll;*/
+ /* box-sizing: border-box;*/
+ padding-bottom: 4%;
+
+}
+.three:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+/*  background: lightblue;*/
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: top right;
+  -webkit-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  transform: skewY(3deg);
+  z-index: -1;
+  background:#DEEFF5;
+  /*background-repeat: no-repeat;
+  background-size: 100%*/;
+}
+
+.three .text h1{
+  color:black;
+}
+
+.three .text span{
+  color:#00AAB9;
+}
+
+.four .text h3{
+  color:#00AAB9;
+}
+.four .text h3{
+  color:black;
+  opacity:0.5;
+}
+
+.four .text h3:hover{
+  opacity:1.0;
+}
+
+i {
+  border: solid #00AAB9;
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/*.right:hover{
+  transform:rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transition: 0.5s;
+
+}*/
+
+h3:hover > .right{transform:rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transition: all 0.5s ease-out;
+}
+
+/*#container:hover > #cube { background-color: yellow; }*/
+
+  </style>
+</head>
+<body>
+<!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand" >Wiley Digital Archives <span></span></a>
+                    <a href="index.html" class="navbar-brand-short" >WDA <span></span></a>
+               </div>
+
+
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="product.html" class="smoothScroll" style = "color:#5b5b5b">Product</a></li>
+
+                        <!--  for product -->
+                        <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="#" style = "color:#5b5b5b">Benefits <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                   <li><a href="rare-content.html">Unique and rare primary souce content</a></li>
+                                   <li><a href="visualization.html">Visualization, exploration and analysis</a></li>
+                                   <li><a href="translate.html">Translate interface</a></li>
+                                   <li><a href="one-time-payment.html">One time payment</a></li>
+                                    <li><a href="exportable.html">Exportable, downloadable and sharable</a></li>
+                                    <li><a href="preservation.html">Preserving the past</a></li>
+                                    <li><a href="under-cosnt.html">Geotagged historical maps</a></li>
+                                    <li><a href="under-cosnt.html">Text and data mining</a></li>
+                                    <li><a href="contact.html">Free Trial</a></li>
+                              </ul>
+                         </li>
+                         
+                         <!--  trying to make dropdown navigation bar, didn't work | update: worked perfectly! -->
+                         <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="#" style = "color:#5b5b5b">Collection <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                   <li><a href="NYAS.html">The New York Academy of Sciences</a></li>
+                                   <li><a href="rcp1.html">Royal College of Physicians of London</a></li>
+                                   <li><a href="rgs.html">Royal Geographical Society</a></li>
+                                   <li><a href="rai.html">Royal Anthropological Institute <br> of Great Britain and Ireland</a></li>
+                                    <li><a href="partner.html">Become a partner</a></li>
+                              </ul>
+                         </li>
+                         <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="#" style = "color:#5b5b5b">Support<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                   <li><a href="dmtu.html">Discoveribility, Training, Marc, Usage Statistics</a></li>
+                                   <li><a href="support.html">Marketing Support Materials</a></li>
+                              </ul>
+                         </li>
+                         <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="#"style = "color:#5b5b5b">About<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                   <li><a href="faq.html">FAQ</a></li>
+                                   <li><a href="about.html">About us</a></li>
+                              </ul>
+                         </li>
+                         <li><a href="contact.html" class="smoothScroll"style = "color:#5b5b5b">Contact</a></li>
+                          
+                    </ul>
+
+
+                    <ul class="nav navbar-nav navbar-right">
+                         <!-- <li><a href="#"> Get Connected! <i class="fa fa-phone"></i> 010 020 0340</a></li> -->
+                         <a href="https://app.wileydigitalarchives.com/wiley/auth/pass;getIp=true" class="section-btn" >Sign In</a>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+  <section id="angled" data-stellar-background-ratio="0.5">
+          <!-- <div class="overlay"></div> -->
+          <!-- <div class="container-fluid"> -->
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class ='one'></div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class = 'text'>
+                          <div class ='content'>
+                            <h1>Needs a headline</h1>
+                             <p style="font-size: 1.4em;">Wiley understands the undeniable value that primary source materials have in today’s research and are deeply invested in the preservation of these coveted pieces of research. These one-of-a-kind materials have the capacity to change the way in which we view the world, how we publish, or even reinterpret previously published research. <br><br>With our deep appreciation for society-based research and our long-rooted history in publishing academic content, we feel a distinct privilege to play a part in the digital preservation of historic, academic content. By partnering with highly regarded societies from around the world, we can preserve the past, and make this valuable content available and accessible for years to come. </p><br>
+                             <a href="#about" class="section-btn-next smoothScroll">Learn More</a><br><br>
+                          </div> 
+                        </div>
+                    </div>
+                    
+                  </div>
+                <!-- </div> -->
+              </section>
+
+     
+     <!- - TESTIMONIAL - ->
+     <section id="testimonial" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                              <!-- <h2>What our clients say</h2> -->
+                         </div>
+                    </div>  
+
+                    <div class="col-md-offset-2 col-md-8 col-sm-12">
+                         <div class="owl-carousel owl-theme">
+                              <div class="item">
+                                   <p>"Our Archives had ended up in boxes in Queens, sitting for years. No one knew what was in it. For us, it’s a reclamation of our history. NYAS has since used the archival material they found to create the first timeline of the Academy we’ve ever had."</p>
+                                        <div class="tst-author">
+                                             <h4>Doug Braaten</h4>
+                                             <span>Editor-in-Chief, THe New York Academy of Sciences</span>
+                                        </div>
+                              </div>
+
+                              <!-- <div class="item">
+                                   <p>I wish we had it earlier.Wiley Digital Archinve benefited our researchers greatly. This archive is rich in content and inexpensive to afford. I wish we had it earlier.</p>
+                                        <div class="tst-author">
+                                             <h4>Johnny Stephen</h4>
+                                             <span>Director, Library Services, New York University</span>
+                                        </div>
+                              </div>
+
+                              <div class="item">
+                                   <p>Wiley Digital Archinve benefited our researchers greatly. This archive is rich in content and inexpensive to afford. I wish we had it earlier.</p>
+                                        <div class="tst-author">
+                                             <h4>Jessie White</h4>
+                                             <span>Director, Library Services, Rutgers University</span>
+                                        </div>
+                              </div> -->
+
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+      <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class ='three'>
+            <div class = 'text'>
+                 <h1>End to End Assistance:</h1>   
+                              
+                <div class="col-md-12 col-sm-12">
+                    <p style = "font-size: 1.4em;">Wiley provides end-to-end assistance and personnel to inventory, identify, catalog, assess, conserve, track, and otherwise prepare a physical collection for digitization and dissemination.<br><br>First, our team of trained conservators, catalogers, and scanning experts take inventory to review the documents and determine if each piece of content is able to be scanned and digitized. If they are not in suitable condition, these professionals are equipped with state-of-the-art tools to repair, restore, and preserve all types of documents. A careful restoration process is integral to enable the digital preservation of each piece of content. This includes repairing damaged items and stabilizing the content to safeguard against the wear of time. Project managers and scan operators working on this project have all had extensive training in handling fragile material and rare content. This is an exciting discovery process, and provides Wiley to play a part in preserving the past. 
+</p> 
+                </div>
+                <!-- <div class="col-md-12 col-sm-12">
+                    <p><span>Jacob Steere-Williams</span>, Assoc. Professor, Department of History, Director, Public Health B.A., College of Charleston and Book Reviews Editor, Journal of the History of Medicine and Allied Sciences</p> 
+                </div>
+                <div class="col-md-12 col-sm-12">
+                    <p><span> Pamela Forde</span>, Archive Manager, at Royal College of Physicians</p> 
+                </div>
+                <div class="col-md-12 col-sm-12">
+                     <p><span>Katie Birkwood</span>, Rare Books and Special Collections Librarian at Royal College of Physicians</p> 
+                </div>   -->                     
+            </div>
+        </div>
+      </div>
+    </div>  
+ 
+
+       <!- - Features - ->
+     <section id="about" data-stellar-background-ratio="0.5" style = "padding-bottom:1%;">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="about-info">
+                              <div class="section-title " data-wow-delay="">
+                                  <!--  <h4>Read our story</h4>
+                                   <br><br><h2>Create Engaging <br> Content Hubs </h2> -->
+                              </div>
+
+                              <div class="rcp-details" data-wow-delay="">
+                                   <p style="font-size: 1.4em; text-align: justify;">Through this process we not only mitigate the risk associated with physical examination, but we may also improve the condition of the original sources. Archival items are repaired, if need be, and are housed in new, archival-quality storage (boxes, sleeves, folders) where appropriate. These storage materials are provided to the society, courtesy of Wiley. Other conservation activities included: surface cleaning (including mold cleaning), tear repair and fragment re-attachment (if there is text on the fragment), spine consolidation, bolt-slitting, flattening and sleeving fragile items in Mylar (instead of repairing, where appropriate).<br><br>Next, cutting-edge technology is used to scan high-res images and perform Optical Character Recognition (OCR), and the header information from handwritten text is keyed-in by hand using a double-key process. A subsequent quality assurance process ensures each piece of content is tagged with the exact folder, box, and collection it came from, preserving the original hierarchy and structure of the physical archive.Once the content is digitized, descriptive metadata, including headers, names, places, and dates, is manually keyed-in and interpolated with existing catalogs or finding aids, to optimize search and discovery. 
+.</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                         <div class="about-image" data-wow-delay="">
+                              <img src="images/nyas-header.jpg" style ="height:400px; border-left:5px solid #00AAB9" class="img-responsive" alt="">
+                  <!-- i frmae has issues with responsiveness  -->           
+                              <!-- <iframe width="560" height="400" src="https://www.youtube.com/embed/fZxgOddjGlk?showinfo = 0 controls = 0 autohide = 1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>  
+
+     <div class ="row" style="margin:0 0 2% 0;background:#e5f6f8;padding: 2%"">
+                    <div class="col-md-12 col-sm-12">
+                      <div class ='four'>
+                        <div class = 'text'>
+                              <h1>Range of contents:</h1>
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Administrative Records</h3> 
+                              </div>
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Correspondence</h3> 
+                              </div>
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Data</h3> 
+                              </div>
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Ephemera</h3> 
+                              </div>
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Fieldwork</h3> 
+                              </div>
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Gray Literature</h3> 
+                              </div> 
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Illustrations</h3> 
+                              </div> 
+                              <div class="col-md-4 col-sm-12">
+                                <h3> Manuscripts</h3> 
+                              </div> 
+                              <div class="col-md-4 col-sm-12">
+                                <h3> Maps</h3> 
+                              </div>  
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Monographs</h3> 
+                              </div>
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Pamphlets</h3> 
+                              </div>
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Periodicals</h3> 
+                              </div> 
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Reports</h3> 
+                              </div> 
+                              <div class="col-md-4 col-sm-12">
+                                <h3> and More!</h3> 
+                              </div> 
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Treatment Records</h3> 
+                              </div>  
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Questionnaires</h3> 
+                              </div> 
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Incunabula</h3> 
+                              </div>                       
+                        </div>
+                      </div>
+                    </div> 
+     </div>
+
+
+     <div class = "module-gradient-callout theme-flat">  
+               <div class = "container">
+                    <div class = "row">
+                         <div class ="col-12">
+                         <span class ="title"> Access to Royal College of Physicians Archive within WDA platform one time purchase, unlimited number of users!</span>
+                         </div> 
+                         <a href="contact.html" class="section-btn-next request" >Request a Personalized Quote</a>
+                    </div>
+               </div>
+          </div>
+
+
+
+     <!- - FOOTER - ->
+     <footer id="footer" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-3 col-sm-8">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">Find us</h2>
+                              </div>
+                              <address class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>123 nulla a cursus rhoncus,<br> augue sem viverra 10870<br>id ultricies sapien</p>
+                              </address>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-8">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">Talk to a representative</h2>
+                              </div>
+                              <address class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>090-080-0650 | 090-070-0430</p>
+                                   <p><a href="mailto:info@company.com">info@company.com</a></p>
+                                   <p>LINE: Wiley247 </p>
+                              </address>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-8">
+                         <div class="footer-info footer-open-hour">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">office hours</h2>
+                              </div>
+                              <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>Monday: Closed</p>
+                                   <div>
+                                        <strong>Tuesday to Friday</strong>
+                                        <p>7:00 AM - 9:00 PM</p>
+                                   </div>
+                                   <div>
+                                        <strong>Saturday - Sunday</strong>
+                                        <p>11:00 AM - 10:00 PM</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4">
+                         <ul class="wow fadeInUp social-icon" data-wow-delay="0.4s">
+                              <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                              <li><a href="#" class="fa fa-twitter"></a></li>
+                              <li><a href="#" class="fa fa-instagram"></a></li>
+                              <li><a href="#" class="fa fa-google"></a></li>
+                         </ul>
+
+                         <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s"> 
+                              <p><br>Copyright &copy; 2018 <br>John Wiley & Son's
+                              
+                              <br><br>Design: <a rel="nofollow" href="http://shoaibahamed.com" target="_parent">Demand Gen web team</a></p>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+       <!- - SCRIPTS - ->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/jquery.magnific-popup.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+</body>
+</html>

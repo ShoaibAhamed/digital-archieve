@@ -170,17 +170,7 @@
   color:#00AAB9;
 }
 
-.four .text h1{
-  color:#00AAB9;
-}
-.four .text h3{
-  color:black;
-  opacity:0.5;
-}
 
-.four .text h3:hover{
-  opacity:1.0;
-}
 
 i {
   border: solid #00AAB9;
@@ -217,37 +207,72 @@ h3:hover > .right{transform:rotate(-135deg);
       cursor: pointer;
       margin-bottom: 5%;
       width: 100%;
+      margin:0;
 
     }
     .tabs span{
       /*padding:10px;*/
-      font-size:30px;
-      border:2px solid #00AAB9;
+      font-size:1.4em;
+      border:1px solid #a9e1e8;
     /*  width:10%;
-*/      margin-bottom: 20%;
+*/      margin-bottom: 3%;
       background:#00AAB9;
       opacity:1.0;
-      padding:1%;
+      padding:2% 6%;
       color:white;
+       margin-left:-0.5%;
+       width:300px;
+       display: inline-block;
+       transition: 0.3s ease-out;
 
     }
+    /* #tabs-two{
+      background:#e5f6f8;
+      color:black;
+    }
+    #tabs-three{
+      background:#e5f6f8;
+      color:black;
+    }*/
+
+    .tabs span:nth-child(2){
+      background:#e5f6f8;
+      color:black;
+
+    }
+     .tabs span:nth-child(3){
+      background:#e5f6f8;
+      color:black;
+
+    }
+
+    .tabs span:hover{
+      background:#19b2c0;
+      color:white;
+    }
+
     @media only screen and (max-width: 600px) {
         .tabs span{
         display: block;
         margin-bottom: 5px;
+        text-align: center;
+        width:100%;
+        margin-left:0%;
           }
       }
 
-    .tabs span:hover{
-      opacity:0.7;
-    }
-
+   
 
 
     .content1{
       text-align: left;
-      line-height: 2px;
       margin:0 10%;
+   /*   line-height: 4.5;*/ /*did not work */
+      display: inline-block;
+
+    }
+    .content1 p{
+      transition: 0.3s linear;
     }
 
     #tabs-wrapper{
@@ -260,7 +285,7 @@ h3:hover > .right{transform:rotate(-135deg);
 <body>
 
   <!-- MENU -->
-     <section class="navbar custom-navbar navbar-fixed-top" role="navigation" s>
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
           <div class="container">
 
                <div class="navbar-header">
@@ -280,27 +305,57 @@ h3:hover > .right{transform:rotate(-135deg);
                <!-- MENU LINKS -->
                <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-nav-first">
-                         <li><a href="#about" class="smoothScroll" style = "color:#5b5b5b">Product</a></li>
-                         <!--  trying to make dropdown navigation bar, didn't work | update: worked perfectly! -->
-                         <li class="dropdown">
-                              <a class="dropdown-toggle" data-toggle="dropdown" href="#"style = "color:#5b5b5b">Collection <span class="caret"></span></a>
+                         <li><a href="product.html" class="smoothScroll" style = "color:#5b5b5b">Product</a></li>
+
+                        <!--  for product -->
+                        <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="#" style = "color:#5b5b5b">Benefits <span class="caret"></span></a>
                               <ul class="dropdown-menu">
-                                   <li><a href="#">The New York Academy of Sciences</a></li>
-                                   <li><a href="rcp1.html">Royal College of Physicians of London</a></li>
-                                   <li><a href="#">Royal Anthropological Institute <br> of Great Britain and Ireland</a></li>
-                                   <li><a href="#">Royal Geographical Society</a></li>
-                                    <li><a href="#">Become a partner</a></li>
+                                   <li><a href="rare-content.html">Unique and rare primary souce content</a></li>
+                                   <li><a href="visualization.html">Visualization, exploration and analysis</a></li>
+                                   <li><a href="translate.html">Translate interface</a></li>
+                                   <li><a href="one-time-payment.html">One time payment</a></li>
+                                    <li><a href="exportable.html">Exportable, downloadable and sharable</a></li>
+                                    <li><a href="preservation.html">Preserving the past</a></li>
+                                    <li><a href="under-cosnt.html">Geotagged historical maps</a></li>
+                                    <li><a href="under-cosnt.html">Text and data mining</a></li>
+                                    <li><a href="contact.html">Free Trial</a></li>
                               </ul>
                          </li>
-                         <li><a href="#menu" class="smoothScroll" style = "color:#5b5b5b">Support</a></li>
-                         <li><a href="contact.html" class="smoothScroll" style = "color:#5b5b5b">Contact</a></li>
-                          <li><a href="slanted-solved.html" class="smoothScroll" style = "color:#5b5b5b">About Us </a></li>
+                         
+                         <!--  trying to make dropdown navigation bar, didn't work | update: worked perfectly! -->
+                         <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="#" style = "color:#5b5b5b">Collection <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                   <li><a href="NYAS.html">The New York Academy of Sciences</a></li>
+                                   <li><a href="rcp1.html">Royal College of Physicians of London</a></li>
+                                   <li><a href="rgs.html">Royal Geographical Society</a></li>
+                                   <li><a href="rai.html">Royal Anthropological Institute <br> of Great Britain and Ireland</a></li>
+                                    <li><a href="partner.html">Become a partner</a></li>
+                              </ul>
+                         </li>
+                         <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="#" style = "color:#5b5b5b">Support<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                   <li><a href="dmtu.html">Discoveribility, Training, Marc, Usage Statistics</a></li>
+                                   <li><a href="support.html">Marketing Support Materials</a></li>
+                              </ul>
+                         </li>
+                         <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="#"style = "color:#5b5b5b">About<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                   <li><a href="faq.html">FAQ</a></li>
+                                   <li><a href="about.html">About us</a></li>
+                              </ul>
+                         </li>
+                         <li><a href="contact.html" class="smoothScroll"style = "color:#5b5b5b">Contact</a></li>
+                          
                     </ul>
 
 
                     <ul class="nav navbar-nav navbar-right">
                          <!-- <li><a href="#"> Get Connected! <i class="fa fa-phone"></i> 010 020 0340</a></li> -->
-                         <a href="https://app.wileydigitalarchives.com/wiley/auth/pass;getIp=true" class="section-btn">Sign In</a>
+                         <a href="https://app.wileydigitalarchives.com/wiley/auth/pass;getIp=true" class="section-btn" >Sign In</a>
                     </ul>
                </div>
 
@@ -340,15 +395,63 @@ h3:hover > .right{transform:rotate(-135deg);
 
   <div class = "tabs">
     
-    <span onclick="currentSlide(1)" >Publication Brower</span>
-    <span onclick="currentSlide(2)" >Analysis Hub</span>
-    <span onclick="currentSlide(3)" >Explorer tool</span>
+    <span id = "tabs-one" onclick="change1();currentSlide(1);">Publication Browser</span>
+     <span id = "tabs-two" onmouseout="unhoverTwo()" onclick="change2();currentSlide(2);" >Analysis Hub</span>
+    <!-- <span id = "tabs-two" onclick= "currentSlide(2);change1()" >Analysis Hub</span> -->
+    <span id = "tabs-three" onclick= "change3();currentSlide(3);" >Explorer tool</span>
 
     <!-- doing it as hover over; works but not perfect -->
 
     <!-- <span onmouseover="currentSlide(1)" onmouseout="currentSlide(2)" >Integration</span>
     <span onmouseover="currentSlide(2)" onmouseout="currentSlide(1)">Hubs</span> -->
   </div>
+
+  <script>
+    function change1(){
+    document.getElementById('tabs-one').style.background = "#00AAB9";
+    document.getElementById('tabs-one').style.color = "white";
+    document.getElementById('tabs-two').style.background = "#e5f6f8";
+    document.getElementById('tabs-two').style.color = "black";
+    document.getElementById('tabs-three').style.background = "#e5f6f8";
+    document.getElementById('tabs-three').style.color = "black";
+  
+  }
+      function change2(){
+    document.getElementById('tabs-two').style.background = "#00AAB9";
+    document.getElementById('tabs-two').style.color = "white";
+    document.getElementById('tabs-one').style.background = "#e5f6f8";
+    document.getElementById('tabs-one').style.color = "black";
+    // document.getElementById('tabs-one').style.:hover.color = red;
+    document.getElementById('tabs-three').style.background = "#e5f6f8";
+    document.getElementById('tabs-three').style.color = "black";
+    
+  
+  }
+
+  function change3(){
+    document.getElementById('tabs-three').style.background = "#00AAB9";
+    document.getElementById('tabs-three').style.color = "white";
+    document.getElementById('tabs-two').style.background = "#e5f6f8";
+    document.getElementById('tabs-two').style.color = "black";
+    document.getElementById('tabs-one').style.background = "#e5f6f8";
+    document.getElementById('tabs-one').style.color = "black";
+
+  
+  }
+
+  // function hoverTwo(){
+  //   document.getElementById('tabs-two').style.background = "#00AAB9";
+  //     document.getElementById('tabs-two').style.color = "#ffffff";
+    
+  // }
+
+  // function unhoverTwo(){
+  //    document.getElementById('tabs-two').style.background = "#e5f6f8";
+  //     document.getElementById('tabs-two').style.color = "#000000";
+  // }
+   
+   
+    </script>
 
   <div class = "content1">
      <p> The <strong>Place of Publication Browser</strong> calls attention to where content was published, when, by whom, and on which subjects. Users can to see who was talking about what, where, when, and in which publication mediums, by selecting an area on the map or by executing a search. This assists users in tracing the evolution of ideas over time and geographies, and adds a visual element to a simple “place of publication” search, adding geographical and historical perspective to the content </p>
@@ -508,6 +611,8 @@ function showSlides(n) {
 
 showSlides(slideIndex);
 </script>
+
+
 
 
        <!- - SCRIPTS - ->
